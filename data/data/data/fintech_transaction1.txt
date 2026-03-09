@@ -1,0 +1,7 @@
+Transaction ID: TXN45872
+Account Holder: Priya Singh
+Bank Name: HDFC Bank
+Debit Amount: ₹3,500
+Transaction Date: 12/03/2025
+Mode: UPI
+Reference Number: UPI12345892

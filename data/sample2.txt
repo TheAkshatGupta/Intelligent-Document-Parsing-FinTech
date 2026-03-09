@@ -1,3 +1,5 @@
-Invoice Number: 98765
-Amount Payable: ₹5,200
-Invoice Date: 02/02/2025
+Invoice ID: INV-56789
+Account Holder: Ankit Verma
+Amount Paid: ₹5,200
+Payment Date: 02/02/2025
+Bank: HDFC Bank

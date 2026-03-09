@@ -1,0 +1,7 @@
+Invoice Number: INV-10452
+Customer Name: Rahul Sharma
+Billing Address: Delhi, India
+Transaction Amount: ₹8,500
+Invoice Date: 14/02/2025
+Payment Method: Credit Card
+Status: Paid
