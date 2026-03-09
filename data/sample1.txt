@@ -1,3 +1,5 @@
-Invoice No: 23456
-Total Amount: ₹12,500
-Date: 10/01/2025
+Invoice Number: INV-10234
+Customer Name: Rahul Sharma
+Transaction Amount: ₹12,500
+Transaction Date: 10/01/2025
+Payment Method: Credit Card
