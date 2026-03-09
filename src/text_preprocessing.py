@@ -1,27 +1,65 @@
-# text_preprocessing.py
-# Responsible for cleaning and normalizing raw extracted text
-
 import re
+
+
+def remove_extra_spaces(text):
+    """Remove multiple spaces"""
+    return re.sub(r"\s+", " ", text)
+
+
+def normalize_colon_format(text):
+    """Fix spacing around colon"""
+    return re.sub(r"\s*:\s*", ": ", text)
+
+
+def normalize_currency(text):
+    """Ensure currency format is clean"""
+    return re.sub(r"₹\s+", "₹", text)
+
+
+def normalize_dates(text):
+    """Standardize date format spacing"""
+    return re.sub(r"\s*/\s*", "/", text)
+
 
 def clean_text(text):
     """
-    Basic text cleaning:
-    - remove extra spaces
-    - remove unnecessary newlines
-    - normalize text
+    Main preprocessing function
     """
+
+    # remove new lines
+    text = text.replace("\n", " ")
+
+    # remove extra spaces
+    text = remove_extra_spaces(text)
+
+    # normalize formatting
+    text = normalize_colon_format(text)
+
+    # normalize currency
+    text = normalize_currency(text)
+
+    # normalize date format
+    text = normalize_dates(text)
+
+    # convert to lowercase
     text = text.lower()
-    text = re.sub(r'\n+', ' ', text)
-    text = re.sub(r'\s+', ' ', text)
-    text = text.strip()
-    return text
+
+    return text.strip()
 
 
 if __name__ == "__main__":
-    sample_text = """
-    Invoice No: 12345
 
-    Total Amount:   ₹25,000
-    Date: 12/01/2025
+    raw_text = """
+    Invoice   No : 23456
+
+    Total Amount : ₹ 12,500
+    Date : 10 / 01 / 2025
     """
-    print(clean_text(sample_text))
+
+    cleaned = clean_text(raw_text)
+
+    print("Raw Text:")
+    print(raw_text)
+
+    print("\nCleaned Text:")
+    print(cleaned)

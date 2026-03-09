@@ -1,0 +1,3 @@
+Invoice No: 23456
+Total Amount: ₹12,500
+Date: 10/01/2025

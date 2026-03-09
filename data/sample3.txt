@@ -1,0 +1,3 @@
+Invoice ID: 44578
+Total: ₹9,800
+Billing Date: 05/03/2025
