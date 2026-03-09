@@ -14,7 +14,7 @@ def run_pipeline(file_path):
 
 
 if __name__ == "__main__":
-    sample_file = "data/data/fintech_transaction1.txt"
+    sample_file = "data/sample1.txt"
     output = run_pipeline(sample_file)
     print("FINAL EXTRACTED ENTITIES:\n")
     print(output)
