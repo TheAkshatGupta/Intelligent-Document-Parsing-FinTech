@@ -12,7 +12,7 @@ def run_pipeline(file_path):
 
 
 if __name__ == "__main__":
-    sample_file = "sample.txt"  # temporary
+    sample_file = "data/sample1.txt"
     output = run_pipeline(sample_file)
     print("CLEANED TEXT OUTPUT:\n")
     print(output)
