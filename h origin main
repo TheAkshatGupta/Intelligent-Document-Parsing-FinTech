@@ -1,0 +1,22 @@
+[33mb7227ed[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Updated Readme
+[33mde1a2f5[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Resolved merge conflict
+[33me313c9c[m resolved merge conflict
+[33m4cdcd7b[m Added realistic fintech invoice and transaction samples
+[33m9f591fd[m Updated pipeline
+[33m8113ead[m Merge branch 'main' of https://github.com/TheAkshatGupta/Intelligent-Document-Parsing-FinTech
+[33m62818f9[m Improved entity extraction patterns for invoice, date, and amount
+[33mb986198[m Updated pipeline and fixed sample file path
+[33md4182f9[m Enhanced text preprocessing and added sample financial documents
+[33m8f9de21[m Added text preprocessing module
+[33me69f88c[m added entity extraction logic
+[33m833f708[m Add initial end-to-end text processing pipeline
+[33me860f53[m Add basic text preprocessing module
+[33mfabfebf[m Delete src/src directory
+[33me171597[m Add basic text preprocessing module
+[33m2ccd5b8[m Add basic text extraction module
+[33m367f8be[m Add outputs folder
+[33m84b6327[m Add notebooks folder
+[33m0fba054[m Add src folder
+[33m588d736[m Add data folder
+[33m9ef17f9[m Initialize project README
+[33m9880dfa[m Initial commit
