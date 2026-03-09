@@ -1,27 +1,31 @@
-# text_preprocessing.py
-# Responsible for cleaning and normalizing raw extracted text
-
 import re
 
 def clean_text(text):
-    """
-    Basic text cleaning:
-    - remove extra spaces
-    - remove unnecessary newlines
-    - normalize text
-    """
+
+    # remove new lines
+    text = text.replace("\n", " ")
+
+    # remove extra spaces
+    text = re.sub(r"\s+", " ", text)
+
+    # normalize colon formatting
+    text = re.sub(r"\s*:\s*", ": ", text)
+
+    # convert to lowercase
     text = text.lower()
-    text = re.sub(r'\n+', ' ', text)
-    text = re.sub(r'\s+', ' ', text)
-    text = text.strip()
-    return text
+
+    return text.strip()
 
 
 if __name__ == "__main__":
-    sample_text = """
-    Invoice No: 12345
 
-    Total Amount:   ₹25,000
-    Date: 12/01/2025
+    raw_text = """
+    Invoice   No : 23456
+    Total Amount : ₹12,500
+    Date : 10/01/2025
     """
-    print(clean_text(sample_text))
+
+    cleaned_text = clean_text(raw_text)
+
+    print("Cleaned Text:")
+    print(cleaned_text)
