@@ -1,111 +1,110 @@
 # 💳 Intelligent Document Parsing – FinTech
 
-🚀 This project focuses on building an **Intelligent Document Parsing system** that automatically extracts important financial information from invoice documents and converts it into structured data.
+🚀 This project builds an **Intelligent Document Parsing system** that automatically extracts important financial information from invoice documents and converts it into structured data.
 
-The system processes documents step-by-step through a modular pipeline.
+The system processes documents step-by-step using a modular pipeline.
 
 ---
 
-# 🎯 Project Objective
+## 🎯 Project Objective
 
 Manual extraction of financial data from invoices is **time-consuming and error-prone**.
 
 This project automates the process by extracting key entities such as:
 
-✔ Invoice Number  
-✔ Invoice Date  
-✔ Total Amount  
+- ✔ Invoice Number
+- ✔ Invoice Date
+- ✔ Total Amount
 
 and converting them into **structured JSON output**.
 
 ---
 
-# 🧠 System Architecture
+## 🧠 System Architecture
 
-The project follows a modular pipeline architecture:
-
-
+```text
 Document
-↓
+   ↓
 Text Extraction
-↓
+   ↓
 Text Preprocessing
-↓
+   ↓
 Entity Extraction
-↓
+   ↓
 JSON Output
+```
 
-
-Each module performs a specific task and passes the processed data to the next stage.
+Each module processes the data and passes it to the next stage.
 
 ---
 
-# ⚙️ Technologies Used
+## ⚙️ Technologies Used
 
 | Technology | Purpose |
 |------|------|
 | 🐍 Python | Core programming language |
-| 🔎 Regex | Entity extraction from text |
+| 🔎 Regex | Entity extraction from invoice text |
 | 🧠 Modular Pipeline | Structured processing |
-| 🌐 GitHub | Version control and collaboration |
+| 🌐 GitHub | Version control & collaboration |
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
-
+```text
 Intelligent-Document-Parsing-FinTech
 │
 ├── data
-│ └── sample invoice documents
+│   └── sample invoice documents
 │
 ├── src
-│ ├── text_extraction.py
-│ ├── text_preprocessing.py
-│ ├── entity_extraction.py
-│ └── pipeline.py
+│   ├── text_extraction.py
+│   ├── text_preprocessing.py
+│   ├── entity_extraction.py
+│   └── pipeline.py
 │
 ├── outputs
-│ └── extracted JSON files
+│   └── extracted JSON files
 │
 └── README.md
-
+```
 
 ---
 
-# 🔍 Module Overview
+## 🔍 Module Overview
 
-## 📄 Text Extraction
+### 📄 Text Extraction
 
 Reads the document and extracts raw text.
 
-Example:
+Example input:
 
-
+```text
 Invoice Number: INV-10234
 Date: 12/01/2025
 Total Amount: 25000
-
+```
 
 ---
 
-## 🧹 Text Preprocessing
+### 🧹 Text Preprocessing
 
 Cleans and normalizes the text by:
 
-✔ Removing extra spaces  
-✔ Fixing colon formatting  
-✔ Normalizing currency and dates  
+- Removing extra spaces
+- Fixing colon formatting
+- Normalizing currency formatting
+- Standardizing date formatting
 
 Example output:
 
-
+```text
 invoice number: inv-10234 date: 12/01/2025 total amount: 25000
-
+```
 
 ---
 
-## 🧩 Entity Extraction
+### 🧩 Entity Extraction
 
 Extracts key financial entities using **regex patterns**.
 
@@ -117,39 +116,39 @@ Entities extracted:
 
 Example result:
 
-
+```json
 {
-"invoice_number": "INV-10234",
-"date": "12/01/2025",
-"amount": "25000"
+  "invoice_number": "INV-10234",
+  "date": "12/01/2025",
+  "amount": "25000"
 }
-
+```
 
 ---
 
-# 🚀 Running the Pipeline
+## 🚀 Running the Pipeline
 
 Run the pipeline using:
 
-
+```bash
 python src/pipeline.py
-
+```
 
 Expected output:
 
-
+```text
 FINAL EXTRACTED ENTITIES:
 
 {
-"invoice_number": "INV-10234",
-"date": "12/01/2025",
-"amount": "25000"
+  "invoice_number": "INV-10234",
+  "date": "12/01/2025",
+  "amount": "25000"
 }
-
+```
 
 ---
 
-# 👥 Team Responsibilities
+## 👥 Team Responsibilities
 
 | Member | Role |
 |------|------|
@@ -160,27 +159,27 @@ FINAL EXTRACTED ENTITIES:
 
 ---
 
-# 📊 Example Output
+## 📊 Example Output
 
-
+```json
 {
-"invoice_number": "INV-2026-001",
-"date": "2026-01-15",
-"amount": "950.00"
+  "invoice_number": "INV-2026-001",
+  "date": "2026-01-15",
+  "amount": "950.00"
 }
-
-
----
-
-# 🔮 Future Improvements
-
-📌 Support for **PDF invoices**  
-📌 Advanced **NLP based entity extraction**  
-📌 **Streamlit UI for document upload**  
-📌 Integration with **financial systems**
+```
 
 ---
 
-# ⭐ Conclusion
+## 🔮 Future Improvements
+
+- 📌 Support for **PDF invoice parsing**
+- 📌 Advanced **NLP-based entity extraction**
+- 📌 **Streamlit UI for document upload**
+- 📌 Integration with **financial systems**
+
+---
+
+## ⭐ Conclusion
 
 This project demonstrates how **AI-assisted document parsing** can automate financial document processing and convert unstructured documents into structured data.
