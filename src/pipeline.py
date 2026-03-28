@@ -1,9 +1,9 @@
 # pipeline.py
 # End-to-end pipeline (document -> clean text)
 
-from text_extraction import extract_text_from_txt
-from text_preprocessing import clean_text
-from entity_extraction import extract_entities
+from src.text_extraction import extract_text_from_txt
+from src.text_preprocessing import clean_text
+from src.entity_extraction import extract_entities
 
 
 def run_pipeline(file_path):
