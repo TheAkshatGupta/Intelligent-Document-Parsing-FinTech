@@ -1,71 +1,72 @@
-🏦 Intelligent Document Parsing System
+# 🏦 Intelligent Document Parsing System
 
 An end-to-end rule-based document parsing system that extracts structured information from unstructured financial documents.
 
-This project uses a modular pipeline architecture to process documents and convert them into structured JSON output.
-
 ---
 
-🌐 Live Demo
+## 🌐 Live Demo
 
 https://intelligent-document-parsing-fintech.streamlit.app/
 
 ---
 
-📌 Project Overview
+## 📌 Project Overview
 
 This system processes financial documents such as invoices and transaction records by extracting key entities like invoice number, date, and transaction amount.
 
-The pipeline follows a structured approach:
+Pipeline Flow:
 
 Document File → Text Extraction → Text Cleaning → Entity Extraction → JSON Output
 
 ---
 
-⚙️ Features
+## ⚙️ Features
 
-- 📂 File-based document parsing
-- 🧠 Rule-based entity extraction using Regex
-- 🔄 Modular pipeline architecture
-- 📊 Structured JSON output
-- 🌐 Interactive UI using Streamlit
-- 🚀 Live deployment
+- File-based document parsing  
+- Rule-based entity extraction using Regex  
+- Modular pipeline architecture  
+- Structured JSON output  
+- Interactive UI using Streamlit  
+- Live deployment  
 
 ---
 
-🧠 System Architecture
+## 🧠 System Architecture
 
+```
 User Upload (.txt)
-        ↓
+↓
 Text Extraction
-        ↓
+↓
 Text Preprocessing
-        ↓
+↓
 Entity Extraction (Regex)
-        ↓
+↓
 Structured JSON Output
+```
 
 ---
 
-📊 Extracted Entities
+## 📊 Extracted Entities
 
-- Invoice Number
-- Date
-- Transaction Amount
-
----
-
-🛠 Tech Stack
-
-- Python
-- Streamlit
-- Regular Expressions (Regex)
-- Modular Pipeline Design
+- Invoice Number  
+- Date  
+- Transaction Amount  
 
 ---
 
-📁 Project Structure
+## 🛠 Tech Stack
 
+- Python  
+- Streamlit  
+- Regular Expressions (Regex)  
+- Modular Pipeline Design  
+
+---
+
+## 📁 Project Structure
+
+```
 Intelligent-Document-Parsing-FinTech
 │
 ├── app.py
@@ -78,44 +79,73 @@ Intelligent-Document-Parsing-FinTech
     ├── entity_extraction.py
     ├── text_preprocessing.py
     ├── text_extraction.py
+```
 
 ---
 
-▶️ How to Run Locally
+## ▶️ How to Run Locally
 
-Clone the repository
+Clone the repository:
 
+```
 git clone https://github.com/TheAkshatGupta/Intelligent-Document-Parsing-FinTech
+```
 
-Install dependencies
+Install dependencies:
 
+```
 pip install -r requirements.txt
+```
 
-Run the app
+Run the app:
 
+```
 streamlit run app.py
+```
 
 ---
 
-👨‍💻 Team CYBERsYNTH
+## 📸 Sample Input
 
-- Akshat Gupta
-- Anushka
-- Nishit
-- Kashak
-
----
-
-🚀 Future Enhancements
-
-- 📄 PDF document parsing
-- 🧠 ML-based Named Entity Recognition (NER)
-- 📊 Validation rules for extracted data
-- 📥 Download extracted JSON
-- 🌐 API integration (FastAPI)
+```
+Transaction ID: T1
+Date: 02/08/2016
+Transaction Amount: 25
+```
 
 ---
 
-📜 License
+## 📤 Sample Output
 
-This project is developed for educational and research purposes.
+```json
+{
+  "invoice_number": "T1",
+  "date": "02/08/2016",
+  "amount": "25"
+}
+```
+
+---
+
+## 👨‍💻 Team CYBERsYNTH
+
+- Akshat Gupta  
+- Anushka  
+- Nishit  
+- Kashak  
+
+---
+
+## 🚀 Future Enhancements
+
+- PDF document parsing  
+- ML-based Named Entity Recognition (NER)  
+- Validation rules  
+- Download JSON feature  
+- API integration (FastAPI)  
+
+---
+
+## 📜 License
+
+This project is for educational purposes.
